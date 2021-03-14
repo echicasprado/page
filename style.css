@@ -1,0 +1,50 @@
+:root{
+    --miVerde:rgb(75, 192, 39);
+}
+
+
+ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+#img{
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    padding: 50px;
+    padding-left: 150px; 
+    display: flex;
+}
+
+img{
+    width: 75%;
+    height: 100%;
+    border-style: dashed;
+    border-width: 30px;
+    border-radius: 50%;
+    border-color: rgb(20, 231, 20);
+}
+
+#myDiv{
+    margin: 100px;
+    margin-left: 200px;
+    width: 300px;
+    height: 200px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 100%;
+    background-color: var(--miVerde);
+    animation: move 5s infinite;
+}
+
+@keyframes move{
+    from {background-color: green;}
+    to {background-color: yellow;}
+
+    from {background-color: yellow;}
+    to {background-color: green;}
+
+}
